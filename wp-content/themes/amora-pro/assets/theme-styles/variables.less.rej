@@ -1,0 +1,12 @@
+diff a/assets/theme-styles/variables.less b/assets/theme-styles/variables.less	(rejected hunks)
+@@ -1,9 +0,0 @@
+-/* Globals */
+-@accent: #a5393b;
+-@onaccent: white;
+-@s-accent: #22333b;
+-@header-bg: @accent;
+-@header-color: @onaccent;
+-@background: #fff;
+-@content: #444;
+-@top-bar: #c6bba9;
+\ No newline at end of file

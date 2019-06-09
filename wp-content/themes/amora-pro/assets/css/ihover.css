@@ -1,0 +1,391 @@
+.solid-hover .image-container {
+  position: relative;
+  margin-bottom: 1em;
+  border: 12px solid #fff;
+  overflow: hidden;
+}
+.solid-hover .image-container .image-overlay-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* adjustments depends on the size of the image */
+  padding: 3px 0;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+.solid-hover .image-container.image-container-disintegrate {
+  -webkit-perspective: 1500px;
+  perspective: 1500px;
+  -webkit-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  overflow: visible !important;
+}
+.solid-hover .image-container.image-container-disintegrate .image-overlay-container {
+  opacity: 0;
+  /* note */
+  -webkit-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding-bottom: 66.5%;
+  /* disintegrate vertically (left side), image clip and delays */
+  /* disintegrate vertically (right side), image-clip and delays */
+  /* horizontal disintegration, image clips and delays */
+}
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container [class^="image-clip-"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: -500;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-left .image-clip-1,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-fly-up .image-clip-1,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-ascend .image-clip-1,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-zoom-in .image-clip-1,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-flush .image-clip-1,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-collapse .image-clip-1,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-drop .image-clip-1 {
+  -webkit-clip-path: inset(0 79% 0% 0);
+  clip-path: inset(0 79% 0% 0);
+}
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-left .image-clip-2,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-fly-up .image-clip-2,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-ascend .image-clip-2,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-zoom-in .image-clip-2,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-flush .image-clip-2,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-collapse .image-clip-2,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-drop .image-clip-2 {
+  -webkit-clip-path: inset(0% 60% 0% 20%);
+  clip-path: inset(0% 60% 0% 20%);
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-left .image-clip-3,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-fly-up .image-clip-3,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-ascend .image-clip-3,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-zoom-in .image-clip-3,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-flush .image-clip-3,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-collapse .image-clip-3,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-drop .image-clip-3 {
+  -webkit-clip-path: inset(0% 40% 0% 39%);
+  clip-path: inset(0% 40% 0% 39%);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-left .image-clip-4,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-fly-up .image-clip-4,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-ascend .image-clip-4,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-zoom-in .image-clip-4,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-flush .image-clip-4,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-collapse .image-clip-4,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-drop .image-clip-4 {
+  -webkit-clip-path: inset(0% 20% 0% 59%);
+  clip-path: inset(0% 20% 0% 59%);
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-left .image-clip-5,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-fly-up .image-clip-5,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-ascend .image-clip-5,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-zoom-in .image-clip-5,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-flush .image-clip-5,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-collapse .image-clip-5,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-drop .image-clip-5 {
+  -webkit-clip-path: inset(0% 0% 0% 79%);
+  clip-path: inset(0% 0% 0% 79%);
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-right .image-clip-1,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-fly-down .image-clip-1,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-descend .image-clip-1,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-zoom-out .image-clip-1,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-flush-clockwise .image-clip-1 {
+  -webkit-clip-path: inset(0 79% 0% 0);
+  clip-path: inset(0 79% 0% 0);
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-right .image-clip-2,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-fly-down .image-clip-2,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-descend .image-clip-2,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-zoom-out .image-clip-2,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-flush-clockwise .image-clip-2 {
+  -webkit-clip-path: inset(0% 60% 0% 20%);
+  clip-path: inset(0% 60% 0% 20%);
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-right .image-clip-3,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-fly-down .image-clip-3,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-descend .image-clip-3,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-zoom-out .image-clip-3,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-flush-clockwise .image-clip-3 {
+  -webkit-clip-path: inset(0% 40% 0% 39%);
+  clip-path: inset(0% 40% 0% 39%);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-right .image-clip-4,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-fly-down .image-clip-4,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-descend .image-clip-4,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-zoom-out .image-clip-4,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-flush-clockwise .image-clip-4 {
+  -webkit-clip-path: inset(0% 20% 0% 59%);
+  clip-path: inset(0% 20% 0% 59%);
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-right .image-clip-5,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-fly-down .image-clip-5,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-descend .image-clip-5,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-zoom-out .image-clip-5,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-v-flush-clockwise .image-clip-5 {
+  -webkit-clip-path: inset(0% 0% 0% 79%);
+  clip-path: inset(0% 0% 0% 79%);
+}
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-up .image-clip-1,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-fly-up .image-clip-1,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-ascend .image-clip-1,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-zoom-in .image-clip-1,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-flush .image-clip-1 {
+  -webkit-clip-path: inset(0% 0% 79% 0%);
+  clip-path: inset(0% 0% 79% 0%);
+}
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-up .image-clip-2,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-fly-up .image-clip-2,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-ascend .image-clip-2,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-zoom-in .image-clip-2,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-flush .image-clip-2 {
+  -webkit-clip-path: inset(20% 0% 60% 0%);
+  clip-path: inset(20% 0% 60% 0%);
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-up .image-clip-3,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-fly-up .image-clip-3,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-ascend .image-clip-3,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-zoom-in .image-clip-3,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-flush .image-clip-3 {
+  -webkit-clip-path: inset(39% 0% 40% 0%);
+  clip-path: inset(39% 0% 40% 0%);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-up .image-clip-4,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-fly-up .image-clip-4,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-ascend .image-clip-4,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-zoom-in .image-clip-4,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-flush .image-clip-4 {
+  -webkit-clip-path: inset(59% 0% 20% 0%);
+  clip-path: inset(59% 0% 20% 0%);
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-up .image-clip-5,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-fly-up .image-clip-5,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-ascend .image-clip-5,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-zoom-in .image-clip-5,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-flush .image-clip-5 {
+  -webkit-clip-path: inset(79% 0% 0% 0%);
+  clip-path: inset(79% 0% 0% 0%);
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-down .image-clip-1,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-fly-down .image-clip-1,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-descend .image-clip-1,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-zoom-out .image-clip-1,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-flush-clockwise .image-clip-1,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-collapse .image-clip-1,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-drop .image-clip-1 {
+  -webkit-clip-path: inset(0% 0% 79% 0%);
+  clip-path: inset(0% 0% 79% 0%);
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-down .image-clip-2,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-fly-down .image-clip-2,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-descend .image-clip-2,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-zoom-out .image-clip-2,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-flush-clockwise .image-clip-2,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-collapse .image-clip-2,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-drop .image-clip-2 {
+  -webkit-clip-path: inset(20% 0% 60% 0%);
+  clip-path: inset(20% 0% 60% 0%);
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-down .image-clip-3,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-fly-down .image-clip-3,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-descend .image-clip-3,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-zoom-out .image-clip-3,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-flush-clockwise .image-clip-3,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-collapse .image-clip-3,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-drop .image-clip-3 {
+  -webkit-clip-path: inset(39% 0% 40% 0%);
+  clip-path: inset(39% 0% 40% 0%);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-down .image-clip-4,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-fly-down .image-clip-4,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-descend .image-clip-4,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-zoom-out .image-clip-4,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-flush-clockwise .image-clip-4,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-collapse .image-clip-4,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-drop .image-clip-4 {
+  -webkit-clip-path: inset(59% 0% 20% 0%);
+  clip-path: inset(59% 0% 20% 0%);
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-down .image-clip-5,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-fly-down .image-clip-5,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-descend .image-clip-5,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-zoom-out .image-clip-5,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-flush-clockwise .image-clip-5,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-collapse .image-clip-5,
+.solid-hover .image-container.image-container-disintegrate .disintegrate-container.disintegrate-h-drop .image-clip-5 {
+  -webkit-clip-path: inset(79% 0% 0% 0%);
+  clip-path: inset(79% 0% 0% 0%);
+}
+.solid-hover .image-container.image-container-disintegrate:hover {
+  /* horizontal desintegration */
+  /* for disintegrate effects */
+}
+.solid-hover .image-container.image-container-disintegrate:hover .image-overlay-container {
+  opacity: 1;
+}
+.solid-hover .image-container.image-container-disintegrate:hover .disintegrate-v-left [class^="image-clip"] {
+  -webkit-transform: translateX(-10%);
+  -ms-transform: translateX(-10%);
+  transform: translateX(-10%);
+}
+.solid-hover .image-container.image-container-disintegrate:hover .disintegrate-v-right [class^="image-clip"] {
+  -webkit-transform: translateX(10%);
+  -ms-transform: translateX(10%);
+  transform: translateX(10%);
+}
+.solid-hover .image-container.image-container-disintegrate:hover .disintegrate-v-fly-up [class^="image-clip"] {
+  -webkit-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+  -webkit-transform: rotateX(150deg) rotateY(90deg) rotateZ(5deg);
+  transform: rotateX(150deg) rotateY(90deg) rotateZ(5deg);
+}
+.solid-hover .image-container.image-container-disintegrate:hover .disintegrate-v-fly-down [class^="image-clip"] {
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  -webkit-transform: rotateX(-150deg) rotateY(-90deg) rotateZ(-5deg);
+  transform: rotateX(-150deg) rotateY(-90deg) rotateZ(-5deg);
+}
+.solid-hover .image-container.image-container-disintegrate:hover .disintegrate-v-ascend [class^="image-clip"],
+.solid-hover .image-container.image-container-disintegrate:hover .disintegrate-h-ascend [class^="image-clip"] {
+  -webkit-transform: rotateY(-10deg) translate(-15%, -15%);
+  transform: rotateY(-10deg) translate(-15%, -15%);
+}
+.solid-hover .image-container.image-container-disintegrate:hover .disintegrate-v-descend [class^="image-clip"],
+.solid-hover .image-container.image-container-disintegrate:hover .disintegrate-h-descend [class^="image-clip"] {
+  -webkit-transform: rotateY(10deg) translate(15%, 15%);
+  transform: rotateY(10deg) translate(15%, 15%);
+}
+.solid-hover .image-container.image-container-disintegrate:hover .disintegrate-v-zoom-in [class^="image-clip"],
+.solid-hover .image-container.image-container-disintegrate:hover .disintegrate-h-zoom-in [class^="image-clip"] {
+  -webkit-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  transform: scale(1.25);
+}
+.solid-hover .image-container.image-container-disintegrate:hover .disintegrate-v-zoom-out [class^="image-clip"],
+.solid-hover .image-container.image-container-disintegrate:hover .disintegrate-h-zoom-out [class^="image-clip"] {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+.solid-hover .image-container.image-container-disintegrate:hover .disintegrate-v-flush [class^="image-clip"],
+.solid-hover .image-container.image-container-disintegrate:hover .disintegrate-h-flush [class^="image-clip"] {
+  -webkit-transform: scale(0) rotateZ(-360deg) rotateY(90deg) rotateX(90deg);
+  transform: scale(0) rotateZ(-360deg) rotateY(90deg) rotateX(90deg);
+}
+.solid-hover .image-container.image-container-disintegrate:hover .disintegrate-v-flush-clockwise [class^="image-clip"],
+.solid-hover .image-container.image-container-disintegrate:hover .disintegrate-h-flush-clockwise [class^="image-clip"] {
+  -webkit-transform: scale(0) rotateZ(360deg) rotateY(-90deg) rotateX(-90deg);
+  transform: scale(0) rotateZ(360deg) rotateY(-90deg) rotateX(-90deg);
+}
+.solid-hover .image-container.image-container-disintegrate:hover .disintegrate-v-collapse [class^="image-clip"]:nth-child(even),
+.solid-hover .image-container.image-container-disintegrate:hover .disintegrate-h-collapse [class^="image-clip"]:nth-child(even) {
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  -webkit-transform: rotateX(90deg) rotateZ(5deg);
+  transform: rotateX(90deg) rotateZ(5deg);
+}
+.solid-hover .image-container.image-container-disintegrate:hover .disintegrate-v-collapse [class^="image-clip"]:nth-child(odd),
+.solid-hover .image-container.image-container-disintegrate:hover .disintegrate-h-collapse [class^="image-clip"]:nth-child(odd) {
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  -webkit-transform: rotateX(90deg) rotateZ(-5deg);
+  transform: rotateX(90deg) rotateZ(-5deg);
+}
+.solid-hover .image-container.image-container-disintegrate:hover .disintegrate-v-drop [class^="image-clip"]:nth-child(even),
+.solid-hover .image-container.image-container-disintegrate:hover .disintegrate-h-drop [class^="image-clip"]:nth-child(even) {
+  -webkit-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+  -webkit-transform: rotateX(10deg) rotateY(15deg) rotateZ(-5deg) translateY(30%);
+  transform: rotateX(10deg) rotateY(15deg) rotateZ(-5deg) translateY(30%);
+}
+.solid-hover .image-container.image-container-disintegrate:hover .disintegrate-v-drop [class^="image-clip"]:nth-child(odd),
+.solid-hover .image-container.image-container-disintegrate:hover .disintegrate-h-drop [class^="image-clip"]:nth-child(odd) {
+  -webkit-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+  -webkit-transform: rotateX(10deg) rotateY(-15deg) rotateZ(5deg) translateY(30%);
+  transform: rotateX(10deg) rotateY(-15deg) rotateZ(5deg) translateY(30%);
+}
+.solid-hover .image-container.image-container-disintegrate:hover .disintegrate-h-up [class^="image-clip"] {
+  -webkit-transform: translateY(-10%);
+  -ms-transform: translateY(-10%);
+  transform: translateY(-10%);
+}
+.solid-hover .image-container.image-container-disintegrate:hover .disintegrate-h-down [class^="image-clip"] {
+  -webkit-transform: translateY(10%);
+  -ms-transform: translateY(10%);
+  transform: translateY(10%);
+}
+.solid-hover .image-container.image-container-disintegrate:hover .disintegrate-h-fly-up [class^="image-clip"] {
+  -webkit-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+  -webkit-transform: rotateY(150deg) rotateX(120deg) rotateZ(5deg);
+  transform: rotateY(150deg) rotateX(120deg) rotateZ(5deg);
+}
+.solid-hover .image-container.image-container-disintegrate:hover .disintegrate-h-fly-down [class^="image-clip"] {
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  -webkit-transform: rotateY(-150deg) rotateX(-120deg) rotateZ(-5deg);
+  transform: rotateY(-150deg) rotateX(-120deg) rotateZ(-5deg);
+}
+.solid-hover .image-container.image-container-disintegrate:hover .image-clip-1,
+.solid-hover .image-container.image-container-disintegrate:hover .image-clip-2,
+.solid-hover .image-container.image-container-disintegrate:hover .image-clip-3,
+.solid-hover .image-container.image-container-disintegrate:hover .image-clip-4,
+.solid-hover .image-container.image-container-disintegrate:hover .image-clip-5 {
+  opacity: 0;
+}

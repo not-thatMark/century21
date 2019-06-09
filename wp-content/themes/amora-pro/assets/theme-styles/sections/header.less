@@ -1,0 +1,68 @@
+/* ---------- Header ------------- */
+
+#masthead {
+  text-align: center;
+  position: relative;
+  z-index: 90;
+  clear: both;
+  min-height: 400px;
+  .layer {
+    background: fade(black, 0%);
+  }
+  #text-title-desc {
+    clear: none;
+    float: left;
+    @media screen and (max-width: 768px) {
+      float: none;
+    }
+    vertical-align: middle;
+  }
+  .site-branding {
+    padding: 50px 0;
+    overflow: hidden;
+    display: inline-block;
+    float: none;
+    text-align: center;
+    margin-top: 50px;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+      float: none;
+      padding-bottom: 5px;
+      margin-top: 70px;
+    }
+  }
+  h1.site-title {
+    font-size: 48px;
+    font-weight: 400;
+    margin-top: 0px;
+    a {
+      color: darken(@onaccent,6%);
+    }
+  }
+  h2.site-description {
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 8px;
+    color: darken(@onaccent,6%);
+  }
+
+  #searchicon {
+    background: fade(darken(@footer-bg,20%),50%);
+    border: solid 2px @onaccent;
+    padding-top: 6px;
+    padding-bottom: 4px;
+  }
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+  #site-logo {
+    display: inline-block;
+    max-width: 200px;
+    max-height: 200px;
+    text-align: center;
+    float: none;
+    @media screen and (max-width: 768px) {
+      float: none;
+    }
+  }
+}

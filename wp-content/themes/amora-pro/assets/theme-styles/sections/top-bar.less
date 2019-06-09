@@ -1,0 +1,26 @@
+.top-bar{
+  position: absolute;
+  width: 100% !important;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 0;
+  z-index: 888;
+  #search-icon{
+    display: inline-block;
+    font-size: 24px;
+    padding: 0px 20px;
+    color: @onaccent;
+    a{
+      color: @onaccent;
+      &:hover{
+        color: darken(@onaccent,20%);
+      }
+    }
+    @media screen and (max-width: 767px){
+      float: left;
+      font-size: 18px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
+  }
+
+}

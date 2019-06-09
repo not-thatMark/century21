@@ -1,0 +1,98 @@
+/* SHOWCASE */
+#showcase {
+  .showcase-container {
+    padding: 0px 10px;
+    padding-top: 30px;
+    clear: both;
+  }
+  .showcase-item {
+    position: relative;
+    padding: 0px;
+    overflow: hidden;
+    text-align: center;
+    @media screen and (max-width: 600px) {
+      width: 97%;
+    }
+    @media screen and (max-width: 767px) {
+      margin-bottom: 5px;
+    }
+      img {
+      width: 97%;
+      -webkit-filter: brightness(0.7);
+      filter: brightness(0.7);
+      position: relative;
+      .transform(translateY(0px));
+      .transition(0.4s all ease;)
+    }
+      .hvr-ripple-out::before {
+        border-top: dashed 1px @onaccent;
+        border-bottom: dashed 1px @onaccent;
+        border-left: none;
+        border-right: none;
+      }
+
+    .showcase-caption {
+      position: absolute;
+      text-align: center;
+      font-weight: bolder;
+      width: 97%;
+      bottom: 40%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      color: @onaccent;
+      z-index: 80;
+      .transition(0.4s all ease);
+      padding: 10px;
+      padding-top: 10px;
+
+      background: rgba(0, 0, 0, 0.5);
+      padding-bottom: 10px;
+      -webkit-backface-visibility: hidden;
+      .showcase-title {
+        font-size: 16px;
+        color: darken(@onaccent,6%);
+        font-weight: bold;
+        .transition(0.4s all ease);
+        @media screen and (min-width: 767px) and (max-width: 1200px) {
+          font-size: 12px;
+        }
+        @media screen and (max-width: 600px) {
+          font-size: 14px;
+        }
+      }
+      .showcase-desc {
+        font-size: 14px;
+        color: darken(@onaccent,6%);
+        font-weight: normal;
+        @media screen and (min-width: 767px) and (max-width: 1200px) {
+          font-size: 11px;
+        }
+          @media screen and (max-width: 600px) {
+          font-size: 12px;
+          font-weight: normal;
+        }
+        .transition(0.4s all ease);
+      }
+    }
+    @media screen and (min-width: 767px) {
+      &:hover {
+        overflow: hidden;
+        .hvr-ripple-out::before{
+         // opacity: 0;
+        }
+        img {
+          overflow: hidden;
+          -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+
+        }
+        .showcase-caption {
+          .transform(translateY(9px));
+        }
+        .showcase-title, .showcase-desc {
+        }
+      }
+    }
+  }
+}

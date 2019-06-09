@@ -1,0 +1,93 @@
+.featposts_top {
+  margin-top: 45px;
+  @media screen and (max-width: 767px) {
+    margin-top: 25px;
+    .item-container {
+      margin-bottom: none;
+    }
+    .item {
+      width: 100%;;
+      margin: auto;
+      margin-bottom: 15px;
+      img {
+        width: 100%;
+        .transform(none);
+        .transition(none);
+      }
+      .post-title {
+        opacity: 1;
+        margin-bottom: 0;
+        border-bottom: solid 5px darken(@background, 6%);
+        position: relative;
+        margin-bottom: 8px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+  padding: 0;
+  .item {
+    padding: 0px;
+    position: relative;
+    margin-bottom: 0;
+    overflow: visible;
+    .item-container {
+      overflow: visible;
+      .transition(0.8s all ease);
+    }
+
+    img {
+      .transition(1s all ease);
+      .transform(scale(1.02));
+      position: relative;
+      .transition(0.4s all ease);
+      transform-origin: bottom;
+    }
+    &:nth-of-type(1) {
+      z-index: 6;
+      img { z-index: 6; }
+    }
+    &:nth-of-type(2) {
+      z-index: 7;
+      img { z-index: 7; }
+    }
+    &:nth-of-type(3) {
+      z-index: 8;
+      img { z-index: 8; }
+    }
+    .post-title {
+      position: absolute;
+      bottom: 0;
+      background: @background;
+      color: @content;
+      display: block;
+      width: 100%;
+      text-align: center;
+      z-index: 10;
+      opacity: 0;
+      @media screen and (max-width: 767px) {
+        opacity: 1;
+        .transform(translateY(0px) scale(1.05));
+      }
+      padding: 10px 30px;
+      .transition(0.4s all ease);
+      .transform(translateY(100%) scale(1.03));
+      @media screen and (max-width: 767px) { padding-bottom: 15px;}
+    }
+    &:hover {
+      .item-container {
+        .transform(translateY(-1px));
+      }
+      .post-title {
+        opacity: 1;
+        .transform(translateY(0px) scale(1.05));
+
+      }
+      img {
+        filter: brightness(0.9);
+        -webkit-filter: brightness(0.9);
+        .transform(scale(1.05));
+
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+ChangeLog
+=========
+
+Version 2.0.3
+	i) Updated Screenshot
+	ii) Removed Minor Bugs
+
+Version 2.0.2
+
+	i) Showcase minor bug fixed and featured Areas bug fixed also.
+	ii) Priority bug fixed for featured area and showcase customizer sections.
+
+Version 2.0.1
+
+	i) Initial Release

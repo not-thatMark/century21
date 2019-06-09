@@ -1,0 +1,58 @@
+/* Swiper Coverflow */
+#coverflow, #coverflow-posts {
+  position: relative;
+  overflow: hidden;
+  @media screen and (max-width: 767px) {
+    margin-bottom: -30px;
+  }
+  .section-title {
+    margin-left: 15px;
+    margin-bottom: -10px;
+  }
+  .swiper-container, .swiper-container-posts {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+      border: solid 4px darken(@background, 6%);
+    }
+  }
+  .product-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  h3 {
+    background: fade(@accent,80%);
+    color: @onaccent;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    clear: both;
+    font-size: 14px;
+    .transition(0.4s all ease);
+    &:hover {
+      background: @accent;
+    }
+  }
+  .price {
+    background: fade(@onaccent, 80%);
+    color: @accent;
+    padding: 9px 5px;
+    padding-bottom: 8px;
+    margin-left: -4px;
+    font-size: 13px;
+    del {
+      font-size: 12px;
+    }
+  }
+  .swiper-pagination-bullet-active {
+    background: @accent;
+  }
+}

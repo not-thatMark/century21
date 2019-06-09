@@ -1,0 +1,125 @@
+.body-font {
+  font-family: "Bitter", sans-serif;
+}
+.title-font {
+  font-family: "Bree Serif", sans-serif;
+}
+
+body {
+  .body-font;
+  overflow: hidden;
+  background: @body-bg;
+  word-wrap: break-word;
+}
+.mega-container {
+  background: @background;
+  max-width: 1170px;
+  margin: auto;
+  margin-top: 20px;
+  overflow: visible;
+  clear: both;
+}
+a {
+  color: @accent;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+    color: @accent;
+  }
+}
+.container {
+  margin: auto;
+  max-width: 1100px;
+}
+.panel {
+  background: none;
+}
+
+.featured-area {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  display: block;
+  clear: both;
+  @media screen and (max-width: 767px){
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+}
+
+::selection {
+  background: @accent;
+  color: @onaccent;
+}
+
+#main {
+  overflow: hidden;
+  clear: both;
+}
+
+
+/* section titles */
+.section-title {
+  color: darken(@content,13%);
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 30px;
+ // margin-top: 20px;
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  .title-font;
+  @media screen and (max-width: 991px) {
+    margin-top: 20px;
+  }
+  span {
+    background: @background;
+    position: relative;
+    padding: 5px 8px;
+    padding-right: 15px;
+    z-index: 1;
+    display: inline-block;
+    border-bottom: 4px solid @accent;
+  }
+}
+
+#content {
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+#infinite-handle {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  width: 100%;
+  clear: both;
+  span { background: fade(black, 0%); }
+  span button, span button:hover {
+    background: darken(@background,10%);
+    box-shadow: none;
+    font-size: 15px;
+    font-weight: 300;
+    color: black;
+    text-shadow: none;
+    border-radius: 0px;
+    border-bottom: solid 2px darken(@background,20%);
+    padding: 5px 10px;
+    outline: none;
+  }
+}
+/* infinite Loader */
+span.infinite-loader .spinner {
+  left: 50% !important;
+}
+.infinity-end.neverending #main {
+  margin-bottom: 100px;
+}
+
+//#primary .section-title{
+//  display: none;
+//}
+article{
+  padding: 10px;
+}
